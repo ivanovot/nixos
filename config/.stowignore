@@ -1,0 +1,37 @@
+# Временные файлы и кэши
+lock
+*.lock
+.lock
+
+# Firefox профили и кэши
+Crash Reports
+Profile Groups
+*.default
+*.default-release
+sessionstore-backups/
+crashes/
+storage/
+cache/
+
+# Code временные файлы
+Cache_Data/
+CachedData/
+
+# Системные файлы
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+.#*
+\#*\#
+
+# Git
+.gitignore
+.gitattributes
+
+# Резервные копии
+*.backup
+*.bak
+*.tmp

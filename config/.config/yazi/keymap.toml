@@ -1,0 +1,33 @@
+[mgr]
+
+# выход
+q = "quit"
+
+# навигация (vim-style)
+h = "leave"
+l = "enter"
+j = "arrow_down"
+k = "arrow_up"
+
+gg = "goto_top"
+G = "goto_bottom"
+
+# скрытые файлы
+"." = "toggle_hidden"
+
+# операции
+"e" = "open_with edit"
+"o" = "open_with open"
+
+# создание/удаление
+"n" = "create"
+"d" = "remove"
+"r" = "rename"
+"p" = "paste"
+
+# помощь
+"?" = "help"
+
+[opener]
+edit = [{ run = "micro %*", block = true }]
+open = [{ run = "micro %*", orphan = true }]
