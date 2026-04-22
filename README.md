@@ -2,47 +2,16 @@
 
 Персональная конфигурация NixOS с декларативным управлением системой и приложениями.
 
-## Структура
-
-```
-.
-├── config/          # Конфигурационные файлы приложений
-│   ├── .config/     # XDG config файлы
-│   │   ├── niri/    # Wayland композитор
-│   │   ├── kitty/   # Терминал
-│   │   ├── alacritty/
-│   │   ├── yazi/    # Файловый менеджер
-│   │   ├── cava/    # Аудиовизуалайзер
-│   │   └── micro/   # Текстовый редактор
-│   └── .bashrc      # Shell конфигурация
-└── README.md
-```
-
-## Приложения
-
-- **Niri** — Wayland композитор с вертикальным тайлингом
-- **Kitty/Alacritty** — Терминальные эмуляторы
-- **Yazi** — Консольный файловый менеджер
-- **Cava** — Аудиовизуалайзер
-- **Micro** — Консольный текстовый редактор
-- **Btop** — Мониторинг системы
-
 ## Установка
+```bash
+git clone git@git.domow.su:timo/nixos.git
+```
 
 ```bash
-# Клонировать репозиторий
-git clone <repository-url> ~/nixos
-
-# Применить конфигурацию (symlinks)
-stow -t ~ config/
+./nixos/src/rebuild.sh
 ```
 
-## Требования
-
-- NixOS или Linux с Nix package manager
-- Git
-- GNU Stow (для управления symlink'ами)
-
-## Лицензия
-
-MIT
+# Установка конфигов
+```bash
+./nixos/src/congig.sh
+```
