@@ -31,6 +31,7 @@
     # GUI applications
     (blender.override { cudaSupport = true; })
     discord
+    modrinth-app
     obsidian
     qbittorrent
     steam
