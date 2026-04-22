@@ -3,60 +3,56 @@
 {
   environment.systemPackages = with pkgs; [
     # CLI tools
-    wget
     curl
     git
+    lsd
     stow
     tree
-    lsd
-    
-    
-    cava
-    fastfetch
+    wget
+
+    # Toys
     cbonsai
     cmatrix
-    
+    cava
 
-    # Terminal applications
+    # Terminal applications / system monitoring
     (btop.override { cudaSupport = true; })
-    nvtopPackages.nvidia
     htop
-    yazi
     micro
-    vim
     nano
+    nvtopPackages.nvidia
+    vim
+    yazi
 
-    # System / Nix tools
-    nh
-    xwayland-satellite
-    dxvk
-    cups-pk-helper
-    wl-clipboard
-    nftables
-    bluez
-    nodejs
-    claude-code
-    python3
-    cudaPackages.cudatoolkit
-
-    # Terminal emulator
+    # Terminal emulators
     alacritty
     kitty
 
     # GUI applications
-    vscode
-    # firefox
-    (blender.override {cudaSupport = true; })
-    obsidian
+    (blender.override { cudaSupport = true; })
     discord
-    # obs-studio
-    # throne
-    steam
+    obsidian
     qbittorrent
+    steam
+    vscode
 
+    # Themes / fonts
     adwaita-qt
     gnome-themes-extra
     papirus-icon-theme
+    
+    # System / Nix tools
+    bluez
+    claude-code
+    cudaPackages.cudatoolkit
+    cups-pk-helper
+    dxvk
+    nh
+    nftables
+    nodejs
+    python3
+    wl-clipboard
+    xwayland-satellite
   ];
   
 
@@ -72,7 +68,7 @@
     flatpak.enable = true;
   };
 
-  virtualisation.waydroid.enable = true;
+  # virtualisation.waydroid.enable = true;
 
   fonts.packages = with pkgs; [
   nerd-fonts.hack

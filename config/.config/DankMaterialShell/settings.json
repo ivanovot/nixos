@@ -24,7 +24,7 @@
       }
     }
   },
-  "matugenScheme": "scheme-tonal-spot",
+  "matugenScheme": "scheme-content",
   "matugenContrast": 0,
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
@@ -507,18 +507,11 @@
       "rightWidgets": [
         {
           "id": "systemTray",
-          "enabled": true
+          "enabled": true,
+          "trayUseInlineExpansion": false
         },
         {
           "id": "clipboard",
-          "enabled": true
-        },
-        {
-          "id": "cpuUsage",
-          "enabled": true
-        },
-        {
-          "id": "memUsage",
           "enabled": true
         },
         {
@@ -531,10 +524,6 @@
         },
         {
           "id": "controlCenterButton",
-          "enabled": true
-        },
-        {
-          "id": "nixMonitor",
           "enabled": true
         }
       ],
