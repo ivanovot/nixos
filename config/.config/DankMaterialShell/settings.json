@@ -511,6 +511,11 @@
           "trayUseInlineExpansion": false
         },
         {
+          "id": "cpuUsage",
+          "enabled": true,
+          "minimumWidth": true
+        },
+        {
           "id": "clipboard",
           "enabled": true
         },

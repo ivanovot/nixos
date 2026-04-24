@@ -61,6 +61,14 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
+  services.pipewire = {
+    enable = true;
+
+    pulse.enable = true;   
+    alsa.enable = true;
+    jack.enable = true;
+  };
+
   services.xserver = {
     xkb = {
       layout = "us, ru";
@@ -69,6 +77,8 @@
     displayManager.startx.enable = false;
     enable = true;
   };
+  services.flatpak.enable = true;
+
   programs.xwayland.enable = true;
   
   nixpkgs.config.allowUnfree = true;

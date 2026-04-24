@@ -1,85 +1,61 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-    # CLI tools
-    curl
-    git
-    lsd
-    stow
-    tree
-    wget
+  environment.systemPackages =
+    (with pkgs; [
+      curl
+      git
+      lsd
+      stow
+      tree
+      wget
 
-    # Toys
-    cbonsai
-    cmatrix
-    cava
+      cbonsai
+      cmatrix
+      cava
+      scope-tui
 
-    # Terminal applications / system monitoring
-    (btop.override { cudaSupport = true; })
-    htop
-    micro
-    nano
-    nvtopPackages.nvidia
-    vim
-    yazi
+      (btop.override { cudaSupport = true; })
+      htop
+      micro
+      nano
+      nvtopPackages.nvidia
+      vim
+      yazi
+      fzf
+      fastfetch
 
-    # Terminal emulators
-    alacritty
-    kitty
+      alacritty
+      kitty
 
-    # GUI applications
-    (blender.override { cudaSupport = true; })
-    discord
-    modrinth-app
-    obsidian
-    qbittorrent
-    steam
-    vscode
+      (blender.override { cudaSupport = true; })
+      discord
 
-    # Themes / fonts
-    adwaita-qt
-    gnome-themes-extra
-    papirus-icon-theme
-    
-    # System / Nix tools
-    bluez
-    claude-code
-    cudaPackages.cudatoolkit
-    cups-pk-helper
-    dxvk
-    nh
-    nftables
-    nodejs
-    python3
-    wl-clipboard
-    xwayland-satellite
-  ];
-  
+      qbittorrent
+      obsidian
+      steam
+      vscode
 
-  services = {
+      adwaita-qt
+      gnome-themes-extra
+      papirus-icon-theme
 
-    ollama = {
-      enable = true;
-      package = pkgs.ollama-cuda;
-      };
-
-    openssh.enable = true;
-
-    flatpak.enable = true;
-  };
-
-  # virtualisation.waydroid.enable = true;
-
-  fonts.packages = with pkgs; [
-  nerd-fonts.hack
-  nerd-fonts.noto
-  nerd-fonts.arimo
-  nerd-fonts.jetbrains-mono
-];
-
-nix.settings.substituters = [
-  "https://cache.nixos.org"
-  "https://nix-community.cachix.org"
-];
+      bluez
+      claude-code
+      cudaPackages.cudatoolkit
+      cups-pk-helper
+      dxvk
+      nh
+      nftables
+      nodejs
+      jdk21
+      python3
+      wl-clipboard
+      xwayland-satellite
+      pulseaudio
+    ])
+    ++ [
+	  inputs.setrixtui.packages.${pkgs.system}.default
+	  (pkgs.callPackage /home/timo/rep/Meowdo/default.nix {})      
+    ];
 }

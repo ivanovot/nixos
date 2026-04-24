@@ -7,16 +7,25 @@
     dms = {
           url = "github:AvengeMedia/DankMaterialShell";
           inputs.nixpkgs.follows = "nixpkgs";
-        };
+    };
+    setrixtui = {
+      url = "github:Mjoyufull/Setrixtui";
+      inputs.nixpkgs.follows = "nixpkgs";
+	  };
   };
 	
-  outputs = { self, nixpkgs, dms }: {
+  outputs = { self, nixpkgs, dms, ...}@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ 
-        ./configuration.nix 
-        dms.nixosModules.default
-        ];
+
+    specialArgs = {
+      inherit inputs;
+    };
+          
+    modules = [ 
+      ./configuration.nix 
+      dms.nixosModules.default
+      ];
     };
   };
 }
