@@ -11,7 +11,12 @@
     setrixtui = {
       url = "github:Mjoyufull/Setrixtui";
       inputs.nixpkgs.follows = "nixpkgs";
-	  };
+	};
+	meowdo = {
+	  url = "github:Sycorlax/Meowdo";
+	  inputs.nixpkgs.follows = "nixpkgs";
+	};
+	
   };
 	
   outputs = { self, nixpkgs, dms, ...}@inputs: {
