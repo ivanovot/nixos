@@ -62,4 +62,6 @@
       xwayland-satellite
       pulseaudio
     ];
+
+  services.flatpak.enable = true;
 }

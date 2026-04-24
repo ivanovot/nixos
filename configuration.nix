@@ -6,10 +6,10 @@
   ];
 
   imports = [
-    ./nix/system.nix
-    ./nix/packages.nix
-    ./nix/desktop.nix
-    ./nix/nvidia.nix
+    ./modules/system.nix
+    ./modules/packages.nix
+    ./modules/desktop.nix
+    ./modules/nvidia.nix
     /etc/nixos/hardware-configuration.nix
   ];
 }
