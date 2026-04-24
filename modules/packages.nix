@@ -21,7 +21,8 @@
       setrixtui
 
 	    # tui
-      (btop.override { cudaSupport = true; })
+      # (btop.override { cudaSupport = true; })
+      btop
       htop
       micro
       nano

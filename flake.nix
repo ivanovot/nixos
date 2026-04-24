@@ -21,7 +21,7 @@
   };
 
   outputs = { self, nixpkgs, dms, ... }@inputs: {
-    overlays.default = import ./nix/overlay.nix { inherit inputs; };
+    overlays.default = import ./modules/overlay.nix { inherit inputs; };
 
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";

@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, lib, pkgs, ... }:
 {
   nix.gc.persistent = true;
   programs.nh = {
