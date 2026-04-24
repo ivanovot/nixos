@@ -1,6 +1,10 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
+  nixpkgs.overlays = [
+    inputs.self.overlays.default
+  ];
+
   imports = [
     ./nix/system.nix
     ./nix/packages.nix
