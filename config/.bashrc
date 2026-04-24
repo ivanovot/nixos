@@ -6,6 +6,8 @@ alias mi='micro'
 alias ls='ls --color=auto'
 alias y='yazi'
 
+alias toys='~/nixos/sripts/louncher.sh'
+
 
 # Terminal colors using tput
 BLACK=$(tput setaf 0)
