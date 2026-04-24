@@ -79,6 +79,26 @@
         "type": "github"
       }
     },
+    "meowdo": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1776897516,
+        "narHash": "sha256-OlI1+9OYQyhtGmcXvxUYeeRlJYwrS2T8CafyOY4UnxI=",
+        "owner": "Sycorlax",
+        "repo": "Meowdo",
+        "rev": "3dbdfc68381125b74e78baee7b05957a687b9723",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Sycorlax",
+        "repo": "Meowdo",
+        "type": "github"
+      }
+    },
     "naersk": {
       "inputs": {
         "fenix": "fenix",
@@ -171,6 +191,7 @@
     "root": {
       "inputs": {
         "dms": "dms",
+        "meowdo": "meowdo",
         "nixpkgs": "nixpkgs",
         "setrixtui": "setrixtui"
       }

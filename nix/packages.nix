@@ -56,6 +56,6 @@
     ])
     ++ [
 	  inputs.setrixtui.packages.${pkgs.system}.default
-	  (pkgs.callPackage /home/timo/rep/Meowdo/default.nix {})      
+	  inputs.meowdo.packages.${pkgs.system}.default      
     ];
 }
