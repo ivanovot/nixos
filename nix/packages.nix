@@ -1,8 +1,7 @@
 { config, pkgs, inputs, ... }:
 
 {
-  environment.systemPackages =
-    (with pkgs; [
+  environment.systemPackages = with pkgs; [
       curl
       git
       lsd
@@ -14,6 +13,8 @@
       cmatrix
       cava
       scope-tui
+      meowdo
+      setrixtui
 
       (btop.override { cudaSupport = true; })
       htop
@@ -53,9 +54,5 @@
       wl-clipboard
       xwayland-satellite
       pulseaudio
-    ])
-    ++ [
-	  inputs.setrixtui.packages.${pkgs.system}.default
-	  inputs.meowdo.packages.${pkgs.system}.default      
     ];
 }
