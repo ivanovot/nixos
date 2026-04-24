@@ -2,13 +2,17 @@
 
 {
   environment.systemPackages = with pkgs; [
+  	  # tools
       curl
       git
       lsd
       stow
       tree
       wget
+      bat
+      eza
 
+	    # toys
       cbonsai
       cmatrix
       cava
@@ -16,6 +20,7 @@
       meowdo
       setrixtui
 
+	    # tui
       (btop.override { cudaSupport = true; })
       htop
       micro
@@ -26,21 +31,23 @@
       fzf
       fastfetch
 
-      alacritty
+	    # gui
+      alacritty 
       kitty
-
       (blender.override { cudaSupport = true; })
       discord
-
       qbittorrent
       obsidian
       steam
+      prismlauncher
       vscode
 
+      # themes
       adwaita-qt
       gnome-themes-extra
       papirus-icon-theme
 
+	    # system utils
       bluez
       claude-code
       cudaPackages.cudatoolkit
