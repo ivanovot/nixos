@@ -6,6 +6,10 @@
 ```bash
 git clone git@git.domow.su:timo/nixos.git
 ```
+или
+```bash
+git clone git@github.com:ivanovot/nixos.git
+```
 
 ```bash
 ./nixos/src/rebuild.sh
