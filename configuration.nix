@@ -7,7 +7,7 @@
 
   imports = [
     ./modules/modules.nix
-    ./modules/packages.nix
+    # ./modules/packages.nix
     /etc/nixos/hardware-configuration.nix
   ];
 }
