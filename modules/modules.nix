@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./packages/deskop.nix
+    ./packages/desktop.nix
     ./packages/overlay.nix
 
     ./system/bluetooth.nix
