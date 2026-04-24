@@ -2,8 +2,15 @@
 
 {
   imports = [
+    ./packages/cli.nix
     ./packages/desktop.nix
+    ./packages/flatpak.nix
+    ./packages/gui.nix
     ./packages/overlay.nix
+    ./packages/system-utils.nix
+    ./packages/thems.nix
+    ./packages/toys.nix
+    ./packages/tui.nix
 
     ./system/bluetooth.nix
     ./system/boot.nix
@@ -14,7 +21,6 @@
     ./system/nix.nix
     ./system/nvidia.nix
     ./system/sound.nix
-    ./system/tempalte.nix
     ./system/users.nix
   ];
 }
