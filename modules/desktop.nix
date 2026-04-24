@@ -20,4 +20,15 @@
   };
 
   services.displayManager.gdm.enable = true;
+  
+  programs.xwayland.enable = true;
+
+  services.xserver = {
+    xkb = {
+      layout = "us, ru";
+      variant = "";
+    };
+    displayManager.startx.enable = false;
+    enable = true;
+  };
 }
