@@ -6,7 +6,6 @@
     ./packages/desktop.nix
     ./packages/flatpak.nix
     ./packages/gui.nix
-    ./packages/overlay.nix
     ./packages/system-utils.nix
     ./packages/thems.nix
     ./packages/toys.nix
