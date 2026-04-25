@@ -18,6 +18,11 @@
       url = "github:Sycorlax/Meowdo";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ducksay = {
+      url = "github:ivanovot/ducksay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, dms, ... }@inputs: {
