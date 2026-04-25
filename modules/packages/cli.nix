@@ -11,4 +11,5 @@
         bat
         eza
     ];
+    # services.ollama.enable = true;
 }

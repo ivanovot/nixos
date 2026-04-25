@@ -8,5 +8,6 @@
         scope-tui
         meowdo
         setrixtui
+        ducksay
     ];
 }
