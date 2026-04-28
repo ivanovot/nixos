@@ -2,6 +2,6 @@
 
 {
   environment.variables = {
-    BROWSER = "zen-browser";
+    XDG_DATA_DIRS = "/run/current-system/sw/share";
   };
 }
