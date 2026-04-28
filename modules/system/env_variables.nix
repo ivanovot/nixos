@@ -2,6 +2,6 @@
 
 {
   environment.variables = {
-    XDG_DATA_DIRS = "/run/current-system/sw/share";
+    # XDG_DATA_DIRS = "/run/current-system/sw/share";
   };
 }
