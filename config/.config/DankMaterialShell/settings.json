@@ -1,7 +1,7 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/timo/.config/DankMaterialShell/themes/gruvboxMulti/theme.json",
+  "customThemeFile": "/home/timo/.config/DankMaterialShell/themes/gruvboxMaterial/theme.json",
   "registryThemeVariants": {
     "everforest": "hard",
     "catppuccin": {
@@ -20,7 +20,7 @@
     "gruvboxMulti": {
       "dark": {
         "flavor": "material-hard-dark",
-        "accent": "green"
+        "accent": "purple"
       }
     }
   },
@@ -159,13 +159,13 @@
   "showWorkspaceName": false,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
-  "showWorkspaceApps": false,
+  "showWorkspaceApps": true,
   "workspaceDragReorder": true,
   "maxWorkspaceIcons": 3,
   "workspaceAppIconSizeOffset": 0,
   "groupWorkspaceApps": true,
   "workspaceFollowFocus": false,
-  "showOccupiedWorkspacesOnly": false,
+  "showOccupiedWorkspacesOnly": true,
   "reverseScrolling": false,
   "dwlShowAllTags": false,
   "workspaceActiveAppHighlightEnabled": false,
@@ -237,11 +237,11 @@
   "dankLauncherV2Size": "compact",
   "dankLauncherV2BorderEnabled": false,
   "dankLauncherV2BorderThickness": 2,
-  "dankLauncherV2BorderColor": "primary",
+  "dankLauncherV2BorderColor": "surfaceText",
   "dankLauncherV2ShowFooter": true,
   "dankLauncherV2UnloadOnClose": false,
-  "dankLauncherV2IncludeFilesInAll": false,
-  "dankLauncherV2IncludeFoldersInAll": false,
+  "dankLauncherV2IncludeFilesInAll": true,
+  "dankLauncherV2IncludeFoldersInAll": true,
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "auto",
@@ -262,7 +262,7 @@
       "cursorHideTimeout": 0
     }
   },
-  "launcherLogoMode": "apps",
+  "launcherLogoMode": "os",
   "launcherLogoCustomPath": "",
   "launcherLogoColorOverride": "",
   "launcherLogoColorInvertOnMode": false,

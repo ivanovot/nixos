@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  networking.hostName = "nixos";
+  networking.hostName = "comp";
   networking.networkmanager.enable = true;
   networking.nftables.enable = true;
 
