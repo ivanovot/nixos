@@ -21,6 +21,8 @@
       xwayland-satellite
       pulseaudio
 
+      bluetui
+
       xdg-desktop-portal
       xdg-desktop-portal-gtk
     ];

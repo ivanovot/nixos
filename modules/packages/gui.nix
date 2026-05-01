@@ -2,7 +2,8 @@
 
 {
     environment.systemPackages = with pkgs; [
-      alacritty 
+      alacritty
+      throne 
       kitty
       blender
       discord

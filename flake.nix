@@ -23,12 +23,17 @@
       url = "github:ivanovot/ducksay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    bluetui = {
+    	url = "github:pythops/bluetui";
+    	inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, dms, ... }@inputs: {
     overlays.default = import ./modules/packages/overlay.nix { inherit inputs; };
 
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.comp = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
       specialArgs = { inherit inputs; };
