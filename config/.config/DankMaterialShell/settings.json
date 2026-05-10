@@ -36,7 +36,7 @@
   "buttonColorMode": "primary",
   "cornerRadius": 12,
   "niriLayoutGapsOverride": -1,
-  "niriLayoutRadiusOverride": 16,
+  "niriLayoutRadiusOverride": -1,
   "niriLayoutBorderSize": -1,
   "hyprlandLayoutGapsOverride": -1,
   "hyprlandLayoutRadiusOverride": -1,
@@ -319,7 +319,7 @@
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
-  "terminalsAlwaysDark": false,
+  "terminalsAlwaysDark": true,
   "muxType": "tmux",
   "muxUseCustomCommand": false,
   "muxCustomCommand": "",
@@ -335,6 +335,7 @@
   "matugenTemplatePywalfox": true,
   "matugenTemplateZenBrowser": true,
   "matugenTemplateVesktop": true,
+  "matugenTemplateVencord": true,
   "matugenTemplateEquibop": true,
   "matugenTemplateGhostty": true,
   "matugenTemplateKitty": true,
@@ -391,7 +392,7 @@
   "notificationOverlayEnabled": false,
   "notificationPopupShadowEnabled": true,
   "notificationPopupPrivacyMode": false,
-  "modalDarkenBackground": true,
+  "modalDarkenBackground": false,
   "lockScreenShowPowerActions": true,
   "lockScreenShowSystemIcons": true,
   "lockScreenShowTime": true,
@@ -544,7 +545,7 @@
       ],
       "spacing": 4,
       "innerPadding": 4,
-      "bottomGap": 0,
+      "bottomGap": 1,
       "transparency": 1,
       "widgetTransparency": 1,
       "squareCorners": false,
@@ -554,8 +555,8 @@
       "removeWidgetPadding": false,
       "widgetPadding": 8,
       "gothCornersEnabled": false,
-      "gothCornerRadiusOverride": false,
-      "gothCornerRadiusValue": 12,
+      "gothCornerRadiusOverride": true,
+      "gothCornerRadiusValue": 63,
       "borderEnabled": false,
       "borderColor": "surfaceText",
       "borderOpacity": 1,
@@ -579,9 +580,10 @@
       "scrollYBehavior": "workspace",
       "shadowIntensity": 0,
       "shadowOpacity": 60,
-      "shadowColorMode": "text",
+      "shadowColorMode": "default",
       "shadowCustomColor": "#000000",
-      "clickThrough": false
+      "clickThrough": false,
+      "shadowDirectionMode": "manual"
     }
   ],
   "desktopClockEnabled": false,
@@ -653,7 +655,53 @@
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
   "desktopWidgetGridSettings": {},
-  "desktopWidgetInstances": [],
+  "desktopWidgetInstances": [
+    {
+      "id": "dw_1777816897822_jdnf6pu4c",
+      "widgetType": "desktopCommand",
+      "name": "Desktop Command",
+      "enabled": true,
+      "config": {
+        "displayPreferences": [
+          "all"
+        ],
+        "command": "fastfetch",
+        "autoRefresh": true,
+        "commandTimeout": "1",
+        "refreshInterval": "5",
+        "showOnOverlay": false,
+        "showOnOverviewOnly": false,
+        "showOnOverview": false,
+        "syncPositionAcrossScreens": true,
+        "fontSize": 12,
+        "backgroundOpacity": 26,
+        "enableBorder": false,
+        "borderThickness": 6,
+        "borderOpacity": 9,
+        "useDank16": true
+      },
+      "positions": {
+        "DP-2": {
+          "width": 200,
+          "height": 200,
+          "x": 860,
+          "y": 440
+        },
+        "DP-1": {
+          "width": 783.19921875,
+          "height": 371.19921875,
+          "x": 1068.00390625,
+          "y": 78.3984375
+        },
+        "_synced": {
+          "x": 0.5712443033854167,
+          "y": 0.07555700231481481,
+          "width": 793.59765625,
+          "height": 328
+        }
+      }
+    }
+  ],
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
     "dms_settings_search": {

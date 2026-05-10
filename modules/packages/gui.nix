@@ -12,5 +12,8 @@
       steam
       prismlauncher
       vscode
+      gnome-disk-utility
+      libreoffice
     ];
+  
 }

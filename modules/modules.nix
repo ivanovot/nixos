@@ -15,6 +15,7 @@
     ./system/boot.nix
     ./system/clean.nix
     ./system/datetime.nix
+    ./system/disk.nix
     ./system/env_variables.nix
     ./system/network.nix
     ./system/nix.nix

@@ -6,6 +6,8 @@ alias mi='micro'
 alias ls='ls --color=auto'
 alias y='yazi'
 
+alias update='nix flake update ~/nixos'
+alias rebuild='~/nixos/sripts/rebuild.sh'
 alias toys='~/nixos/sripts/louncher.sh'
 
 
