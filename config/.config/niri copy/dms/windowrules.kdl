@@ -6,3 +6,9 @@ window-rule {
     match app-id="^Minecraft* 1.21.11$"
     open-fullscreen true
 }
+
+// @id=wr_1777784399187226601 @name=steam_app_2357570
+window-rule {
+    match app-id="^steam_app_2357570$"
+    open-fullscreen true
+}

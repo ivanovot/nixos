@@ -10,7 +10,7 @@
         wget
         bat
         eza
-        wl-copy
+        wl-clipboard
         android-tools
     ];
     # services.ollama.enable = true;

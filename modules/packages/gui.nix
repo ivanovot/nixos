@@ -13,7 +13,7 @@
       prismlauncher
       vscode
       gnome-disk-utility
-      libreoffice
+      onlyoffice-desktopeditors
     ];
   
 }
