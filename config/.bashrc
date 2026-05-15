@@ -6,9 +6,9 @@ alias mi='micro'
 alias ls='ls --color=auto'
 alias y='yazi'
 
-alias update='nix flake update ~/nixos'
-alias rebuild='~/nixos/sripts/rebuild.sh'
-alias toys='~/nixos/sripts/louncher.sh'
+alias update='nix flake update --flake ~/nixos/flake.nix'
+alias rebuild='~/nixos/scripts/rebuild.sh'
+alias toys='~/nixos/scripts/louncher.sh'
 
 
 # Terminal colors using tput

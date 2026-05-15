@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   programs.niri.enable = true;
@@ -18,6 +18,28 @@
     enableCalendarEvents = true;
     enableClipboardPaste = true;
   };
+  programs.dsearch = {
+    enable = true;
+
+    # Use a custom package (optional)
+    package = pkgs.dsearch;
+
+    # Systemd service configuration
+    systemd = {
+      enable = true;               # Enable systemd user service
+      target = "default.target";   # Start with user session
+    };
+};
+
+#   programs.dank-material-shell.greeter = {
+#     enable = true;
+#     compositor.name = "niri";  # Or "hyprland" or "sway"
+#     configHome = "/home/timo";
+#   };
+#   services.displayManager.dms-greeter = {
+#     enable = true;
+#     compositor.name = "niri";  # Or "hyprland" or "sway"
+#  };
 
   services.displayManager.gdm.enable = true;
   
