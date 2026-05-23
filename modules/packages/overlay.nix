@@ -5,4 +5,5 @@ final: prev: {
   meowdo = inputs.meowdo.packages.${final.system}.default;
   ducksay = inputs.ducksay.packages.${final.system}.default;
   bluetui = inputs.bluetui.packages.${final.system}.default;
+  zen-browser = inputs.zen-browser.packages.${final.system}.default;
 }

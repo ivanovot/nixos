@@ -6,4 +6,8 @@
       gnome-themes-extra
       papirus-icon-theme
     ];
+
+    fonts.packages = with pkgs; [
+      corefonts
+    ];
 }

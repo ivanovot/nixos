@@ -14,6 +14,6 @@
       vscode
       gnome-disk-utility
       onlyoffice-desktopeditors
+      zen-browser
     ];
-  
 }

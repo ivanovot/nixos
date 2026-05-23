@@ -9,4 +9,9 @@
     enable = true;
     backend = "nftables";
   };
+
+  services.openssh = {
+  enable = true;
+  settings.PasswordAuthentication = true;
+};
 }
