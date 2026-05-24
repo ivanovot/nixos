@@ -39,7 +39,14 @@
     overlays.default = import ./modules/packages/overlay.nix { inherit inputs; };
 
     nixosConfigurations.comp = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      pkgs = import nixpkgs {
+        hostPlatform = "x86_64-linux";
+
+        config = {
+          allowUnfree = true;
+          cudaSupport = true;
+        };
+      };
 
       specialArgs = { inherit inputs; };
 
