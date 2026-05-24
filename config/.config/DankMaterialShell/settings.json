@@ -677,7 +677,7 @@
       "id": "dw_1777816897822_jdnf6pu4c",
       "widgetType": "desktopCommand",
       "name": "Desktop Command",
-      "enabled": true,
+      "enabled": false,
       "config": {
         "displayPreferences": [
           "all"
@@ -711,8 +711,8 @@
           "y": 78.3984375
         },
         "_synced": {
-          "x": 0.5712443033854167,
-          "y": 0.07555700231481481,
+          "x": 0.5704142252604166,
+          "y": 0.06371166087962964,
           "width": 793.59765625,
           "height": 328
         }
