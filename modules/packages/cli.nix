@@ -4,6 +4,8 @@
     environment.systemPackages = with pkgs; [
         curl
         git
+        zip
+        unzip
         lsd
         stow
         tree
