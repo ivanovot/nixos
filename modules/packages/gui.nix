@@ -10,9 +10,9 @@
       qbittorrent
       obsidian
       steam
-      (pkgs.prismlauncher.override {
-  glfw3-minecraft = pkgs.glfw3-minecraft;
-})
+      (pkgs.prismlauncher.override {glfw3-minecraft = pkgs.glfw3-minecraft;})
+      gnome-control-center
+      gnome-shell
       vscode
       gnome-disk-utility
       onlyoffice-desktopeditors

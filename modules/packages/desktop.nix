@@ -30,41 +30,17 @@
       target = "default.target";   # Start with user session
     };
 };
+  services.displayManager.ly.enable = true;
 
-#   programs.dank-material-shell.greeter = {
-#     enable = true;
-#     compositor.name = "niri";  # Or "hyprland" or "sway"
-#     configHome = "/home/timo";
-#   };
-#   services.displayManager.dms-greeter = {
-#     enable = true;
-#     compositor.name = "niri";  # Or "hyprland" or "sway"
-#  };
-
-  services.greetd = {
-    enable = true;
-
-    settings.default_session = {
-      user = "greeter";
-      command = ''
-        ${pkgs.greetd.tuigreet}/bin/tuigreet \
-          --sessions ${config.services.displayManager.sessionData.desktops}/share/wayland-sessions \
-          --time \
-          --asterisks \
-          --remember \
-          --cmd ${pkgs.niri}/bin/niri
-      '';
-    };
-  };
-  
   programs.xwayland.enable = true;
 
-  # services.xserver = {
-  #   xkb = {
-  #     layout = "us, ru";
-  #     variant = "";
-  #   };
-  #   displayManager.startx.enable = false;
-  #   enable = true;
-  # };
+  services.xserver = {
+    xkb = {
+      layout = "us, ru";
+      variant = "";
+    };
+    displayManager.startx.enable = false;
+    enable = true;
+  };
+  # services.greetd.enable = true;
 }
