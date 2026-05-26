@@ -41,16 +41,30 @@
 #     compositor.name = "niri";  # Or "hyprland" or "sway"
 #  };
 
-  services.displayManager.gdm.enable = true;
+  services.greetd = {
+    enable = true;
+
+    settings.default_session = {
+      user = "greeter";
+      command = ''
+        ${pkgs.greetd.tuigreet}/bin/tuigreet \
+          --sessions ${config.services.displayManager.sessionData.desktops}/share/wayland-sessions \
+          --time \
+          --asterisks \
+          --remember \
+          --cmd ${pkgs.niri}/bin/niri
+      '';
+    };
+  };
   
   programs.xwayland.enable = true;
 
-  services.xserver = {
-    xkb = {
-      layout = "us, ru";
-      variant = "";
-    };
-    displayManager.startx.enable = false;
-    enable = true;
-  };
+  # services.xserver = {
+  #   xkb = {
+  #     layout = "us, ru";
+  #     variant = "";
+  #   };
+  #   displayManager.startx.enable = false;
+  #   enable = true;
+  # };
 }

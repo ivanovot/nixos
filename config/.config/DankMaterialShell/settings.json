@@ -1,13 +1,13 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/timo/.config/DankMaterialShell/themes/gruvboxMaterial/theme.json",
+  "customThemeFile": "/home/timo/.config/DankMaterialShell/themes/catppuccin/theme.json",
   "registryThemeVariants": {
     "everforest": "hard",
     "catppuccin": {
       "dark": {
         "flavor": "mocha",
-        "accent": "sky"
+        "accent": "blue"
       }
     },
     "amoledBlack": {
@@ -432,6 +432,7 @@
   "notificationTimeoutNormal": 5000,
   "notificationTimeoutCritical": 0,
   "notificationCompactMode": false,
+  "notificationDedupeEnabled": true,
   "notificationPopupPosition": 0,
   "notificationAnimationSpeed": 1,
   "notificationCustomAnimationDuration": 400,

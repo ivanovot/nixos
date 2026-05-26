@@ -12,6 +12,15 @@ gestures {
     }
 }
 
+window-rule {
+    geometry-corner-radius 0
+    open-floating false
+}
+window-rule {
+    match app-id="org.gnome.Nautilus"
+    open-floating true
+}
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
