@@ -8,6 +8,7 @@ alias y='yazi'
 
 alias update='nix flake update --flake ~/nixos/flake.nix'
 alias rebuild='~/nixos/scripts/rebuild.sh'
+alias q='~/nixos/scripts/google.sh'
 alias toys='~/nixos/scripts/louncher.sh'
 
 
