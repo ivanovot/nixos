@@ -559,6 +559,10 @@
         {
           "id": "controlCenterButton",
           "enabled": true
+        },
+        {
+          "id": "nixMonitor",
+          "enabled": true
         }
       ],
       "spacing": 0,

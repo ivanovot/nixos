@@ -19,6 +19,8 @@
       zen-browser
       gimp
       nautilus
-      sushi
+      # sushi
+      imv
+      loupe
     ];
 }
