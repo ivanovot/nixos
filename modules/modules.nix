@@ -20,6 +20,7 @@
     ./system/network.nix
     ./system/nix.nix
     ./system/nvidia.nix
+    ./system/print.nix
     ./system/sound.nix
     ./system/users.nix
   ];

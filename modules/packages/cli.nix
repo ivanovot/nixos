@@ -1,19 +1,28 @@
 { config, pkgs, inputs, ... }:
 
 {
-    environment.systemPackages = with pkgs; [
-        curl
-        git
-        zip
-        unzip
-        lsd
-        stow
-        tree
-        wget
-        bat
-        eza
-        wl-clipboard
-        android-tools
-    ];
-    # services.ollama.enable = true;
+  environment.systemPackages = with pkgs; [
+
+    # Базовые CLI-утилиты
+    curl
+    wget
+    git
+    zip
+    unzip
+
+    # Навигация и работа с файлами
+    tree
+    eza
+    lsd
+    bat
+
+    # Настройка окружения
+    stow
+    wl-clipboard
+
+    # Специализированное
+    android-tools
+  ];
+
+  # services.ollama.enable = true;
 }

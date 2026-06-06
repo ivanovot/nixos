@@ -1,16 +1,20 @@
 { config, pkgs, inputs, ... }:
 
 {
-    environment.systemPackages = with pkgs; [
-      # (btop.override { cudaSupport = true; })
-      btop
-      htop
-      micro
-      nano
-      nvtopPackages.nvidia
-      vim
-      yazi
-      fzf
-      fastfetch
-    ];
+  environment.systemPackages = with pkgs; [
+    # Редакторы
+    micro
+    nano
+    vim
+
+    # Терминал и навигация
+    yazi
+    fzf
+    fastfetch
+
+    # Мониторинг системы
+    htop
+    btop
+    nvtopPackages.nvidia
+  ];
 }
