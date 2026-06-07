@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-
     # Повседневное использование
     zen-browser
     discord
@@ -26,7 +25,7 @@
     # Игры
     steam
     prismlauncher
-    # modrinth-app
+    modrinth-app
 
     # Творчество и контент
     gimp
@@ -35,4 +34,7 @@
     # ВПН
     throne
   ];
+
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
 }

@@ -29,7 +29,7 @@ case "$cmd" in
     ;;
 
   "󰩺 Collect Garbage"* )
-    sudo nix-collect-garbage -d
+    sudo sudo nix store gc
     ;;
 
   "󰒻 Optimise Store"* )
@@ -38,7 +38,7 @@ case "$cmd" in
 
   "󰂖 Full Maintenance"* )
     sudo nh clean all --keep 10
-    sudo nix-collect-garbage -d
+    sudo sudo nix store gc
     sudo nix store optimise
     ;;
 
