@@ -1,65 +1,55 @@
 #!/usr/bin/env bash
 
-cmd=$(cat <<EOF | fzf --prompt="System Control: "
-Rebuild NixOS system
-Update flake inputs
-Garbage collection (retain 10 generations)
-Garbage collection (remove all unreachable paths)
-NH cleanup (retain 10 system generations)
-Nix store optimisation (deduplication)
-Full cleanup (GC + store optimisation)
-Display /nix/store disk usage
-List system generations
-Open flake configuration
-Launch legacy tools
+cmd=$(cat <<EOF | fzf --prompt="󱂬 System Control ❯ "
+󰑓 Rebuild System          Rebuild current NixOS configuration
+󰚰 Update Flake            Update flake inputs and rebuild system
+
+󰆴 Prune Generations       Retain last 10 generations
+󰩺 Collect Garbage         Remove unreachable store paths
+󰒻 Optimise Store          Deduplicate files in /nix/store
+󰂖 Full Maintenance        Prune + GC + Optimise
+
+󰋊 Store Usage             Show /nix/store disk usage
+󱄅 System Generations      List available system rollbacks
 EOF
 )
 
 case "$cmd" in
-  "Rebuild NixOS system")
+  "󰑓 Rebuild System"* )
     ~/nixos/scripts/rebuild.sh
     ;;
 
-  "Update flake inputs")
+  "󰚰 Update Flake"* )
     nix flake update --flake ~/nixos/flake.nix
+    ~/nixos/scripts/rebuild.sh
     ;;
 
-  "Garbage collection (retain 10 generations)")
-    sudo nix-collect-garbage --delete-generations +10
-    ;;
-
-  "Garbage collection (remove all unreachable paths)")
-    sudo nix-collect-garbage -d
-    ;;
-
-  "NH cleanup (retain 10 system generations)")
+  "󰆴 Prune Generations"* )
     sudo nh clean all --keep 10
     ;;
 
-  "Nix store optimisation (deduplication)")
+  "󰩺 Collect Garbage"* )
+    sudo nix-collect-garbage -d
+    ;;
+
+  "󰒻 Optimise Store"* )
     sudo nix store optimise
     ;;
 
-  "Full cleanup (GC + store optimisation)")
-    sudo nix-collect-garbage -d && sudo nix store optimise
+  "󰂖 Full Maintenance"* )
+    sudo nh clean all --keep 10
+    sudo nix-collect-garbage -d
+    sudo nix store optimise
     ;;
 
-  "Display /nix/store disk usage")
+  "󰋊 Store Usage"* )
     du -sh /nix/store
-    read -p "Press Enter..."
     ;;
 
-  "List system generations")
-    sudo nix-env --list-generations --profile /nix/var/nix/profiles/system
-    read -p "Press Enter..."
-    ;;
-
-  "Open flake configuration")
-    ${EDITOR:-micro} ~/nixos/flake.nix
-    ;;
-
-  "Launch legacy tools")
-    cbonsai
+  "󱄅 System Generations"* )
+    sudo nix-env \
+      --list-generations \
+      --profile /nix/var/nix/profiles/system
     ;;
 
   *)
