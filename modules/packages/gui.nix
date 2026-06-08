@@ -5,6 +5,7 @@
     # Повседневное использование
     zen-browser
     discord
+    # telegram-desktop
     qbittorrent
     nautilus
     loupe
@@ -25,11 +26,12 @@
     # Игры
     steam
     prismlauncher
-    modrinth-app
+    # modrinth-app
 
     # Творчество и контент
     gimp
     blender
+    obs-studio
 
     # ВПН
     throne
