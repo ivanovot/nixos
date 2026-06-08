@@ -1,0 +1,12 @@
+[Unit]
+Description=Dank Material Shell
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/run/current-system/sw/bin/dms run
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -23,3 +23,29 @@ window-rule {
     match app-id="^org.gnome.Nautilus$"
     open-maximized true
 }
+
+// @id=wr_1780914977477871566 @name=kitty
+window-rule {
+    match app-id="^kitty$"
+    background-effect {
+        noise 0.57
+        saturation 1
+    }
+}
+
+// @id=wr_1780914992659235889 @name=kitty
+window-rule {
+    match app-id="^kitty$"
+    background-effect {
+        noise 0.05
+        saturation 1
+    }
+}
+
+// @id=wr_1780914999130152340 @name=kitty
+window-rule {
+    match app-id="^kitty$"
+    background-effect {
+        blur true
+    }
+}
