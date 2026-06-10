@@ -18,21 +18,24 @@
   boot.kernelParams = [
     "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
     "nvidia.NVreg_TemporaryFilePath=/var/tmp"
+    "nvidia-drm.modeset=1" 
+    "nvidia-drm.fbdev=0" 
   ];
 
-  environment.variables = {
-    __GL_GSYNC_ALLOWED = "0";
-  };
+  # environment.variables = {
+  #   __GL_GSYNC_ALLOWED = "0";
+  # };
 
   services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {
-    gsp.enable = false;
+    gsp.enable = true;
     modesetting.enable = true;
     powerManagement.enable = true;
     powerManagement.finegrained = false;
-    open = false;
+    open = true;
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    videoAcceleration = true;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
   };
 }

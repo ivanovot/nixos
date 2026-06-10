@@ -26,12 +26,13 @@
     # Игры
     steam
     prismlauncher
+    gamescope
     # modrinth-app
 
     # Творчество и контент
     gimp
-    blender
-    obs-studio
+    # blender
+    # obs-studio
 
     # ВПН
     throne

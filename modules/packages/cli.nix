@@ -22,6 +22,8 @@
 
     # Специализированное
     android-tools
+    speedtest-cli
+    vkmark
   ];
 
   # services.ollama.enable = true;

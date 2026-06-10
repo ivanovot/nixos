@@ -11,4 +11,6 @@
   "hid_generic"
   "usbhid"
 ];
+
+  # boot.loader.systemd-boot.memtest86.enable = true;
 }
