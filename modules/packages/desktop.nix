@@ -53,5 +53,9 @@
   services.gnome.games.enable = false;
   environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
 
+  xdg.portal = {
+  enable = true;
+  extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
   # services.greetd.enable = true;
 }

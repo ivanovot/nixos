@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     # Повседневное использование
     zen-browser
+    firefox
     discord
     # telegram-desktop
     qbittorrent
