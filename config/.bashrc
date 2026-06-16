@@ -5,6 +5,7 @@ export EDITOR='micro'
 alias mi='micro'
 alias ls='ls --color=auto'
 alias y='yazi'
+alias bios='sudo systemctl reboot --firmware-setup'
 
 alias update='nix flake update --flake ~/nixos/flake.nix'
 alias rebuild='~/nixos/scripts/rebuild.sh'

@@ -9,6 +9,8 @@
     git
     zip
     unzip
+    # lsusb
+    # lspci
 
     # Навигация и работа с файлами
     tree
