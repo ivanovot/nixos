@@ -33,7 +33,7 @@
     # Творчество и контент
     gimp
     # blender
-    # obs-studio
+    obs-studio
 
     # ВПН
     throne
