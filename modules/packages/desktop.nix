@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, lib, ... }:
 
 {
   programs.niri.enable = true;
@@ -51,8 +51,39 @@
   #   wayland.enable = true;
   # };
 
-  xdg.portal = {
+  environment.systemPackages = with pkgs; [
+  nautilus
+
+  (runCommandLocal "nautilus-portal" {} ''
+    mkdir -p $out/share/xdg-desktop-portal/portals
+
+    cat > $out/share/xdg-desktop-portal/portals/nautilus.portal <<EOF
+[portal]
+DBusName=org.gnome.Nautilus
+Interfaces=org.freedesktop.impl.portal.FileChooser
+EOF
+  '')
+];
+xdg.portal = {
   enable = true;
-  extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
+  extraPortals = with pkgs; [
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
+  ];
+
+  config.niri = {
+    default = lib.mkForce [
+      "gnome"
+      "gtk"
+    ];
+
+    "org.freedesktop.impl.portal.FileChooser" = lib.mkForce [
+      "nautilus"
+    ];
   };
+};
+environment.variables = {
+  QT_QPA_PLATFORMTHEME = "gtk3";
+};
 }

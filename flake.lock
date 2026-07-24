@@ -9,11 +9,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1782323636,
-        "narHash": "sha256-PV7O1ZMuix9zRrK9Me9/erzC5wxmYlX0EOvIW9TFWbc=",
+        "lastModified": 1784311375,
+        "narHash": "sha256-Qcby+TJma/CG+M3AY0NkrQxfBqUCO4xdeico4w6gJXo=",
         "owner": "pythops",
         "repo": "bluetui",
-        "rev": "2474d934b7dd99b25bbf9d5c5407eded6563bded",
+        "rev": "0ac17bf8bba97c364a3e409f418356063f6b15a2",
         "type": "github"
       },
       "original": {
@@ -22,19 +22,36 @@
         "type": "github"
       }
     },
+    "dank-qml-common": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784485083,
+        "narHash": "sha256-hRTmcd3Ms9DF3X35ZiapXM15rG5X1DtIdlrQZwRINFE=",
+        "owner": "AvengeMedia",
+        "repo": "dank-qml-common",
+        "rev": "c0f2d837e1c9933e6789eeb38e7d456088bd5d1b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "dank-qml-common",
+        "type": "github"
+      }
+    },
     "dms": {
       "inputs": {
+        "dank-qml-common": "dank-qml-common",
         "flake-compat": "flake-compat",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1783180637,
-        "narHash": "sha256-r4waQO9opKbiAGdZsIxLxy9nvS8tGtBVmZ0TQobzGhM=",
+        "lastModified": 1784558384,
+        "narHash": "sha256-71yyLqBwXF1O3dxrbVNICVzF3l8VtV5+vz31DMZwbU4=",
         "owner": "AvengeMedia",
         "repo": "DankMaterialShell",
-        "rev": "25a1b125b7d4be772b45949767a68bc8a9853fb0",
+        "rev": "116cef0b3a824ff89e3de427e6359e1e3485c0c0",
         "type": "github"
       },
       "original": {
@@ -145,11 +162,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777636061,
+        "lastModified": 1783430831,
         "narHash": "sha256-ShSBPtuP2jDAz94PEASFq4VsWJPw8CCQL8fGQ4OseLY=",
         "owner": "Sycorlax",
         "repo": "Meowdo",
-        "rev": "2353ee95b61de6307561fec24a8fe47adb3a684b",
+        "rev": "8274d21820448a0d128af16add58950e377da8fe",
         "type": "github"
       },
       "original": {
@@ -179,11 +196,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1782959384,
-        "narHash": "sha256-xnJJk+ct+D2+wdRxj1wk36w5zV9RVESwRqcklPdt3fM=",
+        "lastModified": 1784497964,
+        "narHash": "sha256-vlHUuqAcbcH2RKmHbPiuQzbv1pnzzavXnI62RD0bqCU=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "65179426c83bb3f6bc14898b42ea1c6f01d374b0",
+        "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
         "type": "github"
       },
       "original": {
@@ -352,11 +369,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1783063092,
-        "narHash": "sha256-H6lM+h8+ZT25uWJwmYkER5yj5RJ9DP2++n5um/XH3J0=",
+        "lastModified": 1784354557,
+        "narHash": "sha256-z2XthIV/68GNghbqmaPVrShPIfMPwpZKTA47REKC5bA=",
         "owner": "youwen5",
         "repo": "zen-browser-flake",
-        "rev": "36b24209358c82e0ea5404ba003ae8dc37334c86",
+        "rev": "239dc504b56eabcfc1dce945e7e22ca99694be89",
         "type": "github"
       },
       "original": {

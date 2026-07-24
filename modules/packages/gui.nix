@@ -6,6 +6,7 @@
     zen-browser
     firefox
     discord
+    telegram-desktop
     # telegram-desktop
     qbittorrent
     nautilus
