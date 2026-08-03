@@ -34,6 +34,9 @@
     # Творчество и контент
     gimp
     # blender
+    # darktable
+    # rawtherapee
+    # rembg
     obs-studio
 
     # ВПН

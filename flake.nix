@@ -33,6 +33,11 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs"; 
     };
+
+    kwin-effects-glass = {
+      url = "github:4v3ngR/kwin-effects-glass";
+      inputs.nixpkgs.follows = "nixpkgs"; 
+    };
   };
 
   outputs = { self, nixpkgs, dms, ... }@inputs: {

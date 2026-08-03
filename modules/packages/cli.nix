@@ -21,6 +21,7 @@
     # Настройка окружения
     stow
     wl-clipboard
+    konsave
 
     # Специализированное
     android-tools

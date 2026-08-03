@@ -6,4 +6,5 @@ final: prev: {
   ducksay = inputs.ducksay.packages.${final.stdenv.hostPlatform.system}.default;
   bluetui = inputs.bluetui.packages.${final.stdenv.hostPlatform.system}.default;
   zen-browser = inputs.zen-browser.packages.${final.stdenv.hostPlatform.system}.default;
+  kwin-effects-glass = inputs.kwin-effects-glass.packages.${final.stdenv.hostPlatform.system}.default;
 }
