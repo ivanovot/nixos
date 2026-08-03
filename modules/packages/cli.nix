@@ -7,6 +7,7 @@
     curl
     wget
     git
+    git-lfs
     zip
     unzip
     # lsusb
