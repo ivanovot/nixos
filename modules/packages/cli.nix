@@ -8,6 +8,7 @@
     wget
     git
     git-lfs
+    gitnuro
     zip
     unzip
     # lsusb
