@@ -51,19 +51,19 @@
     wayland.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [
-  nautilus
-
-  (runCommandLocal "nautilus-portal" {} ''
-    mkdir -p $out/share/xdg-desktop-portal/portals
-
-    cat > $out/share/xdg-desktop-portal/portals/nautilus.portal <<EOF
-[portal]
-DBusName=org.gnome.Nautilus
-Interfaces=org.freedesktop.impl.portal.FileChooser
-EOF
-  '')
-];
+#   environment.systemPackages = with pkgs; [
+#   nautilus
+# 
+#   (runCommandLocal "nautilus-portal" {} ''
+#     mkdir -p $out/share/xdg-desktop-portal/portals
+# 
+#     cat > $out/share/xdg-desktop-portal/portals/nautilus.portal <<EOF
+# [portal]
+# DBusName=org.gnome.Nautilus
+# Interfaces=org.freedesktop.impl.portal.FileChooser
+# EOF
+#   '')
+# ];
 # xdg.portal = {
 #   enable = true;
 # 
