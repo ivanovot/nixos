@@ -9,9 +9,6 @@
     telegram-desktop
     # telegram-desktop
     qbittorrent
-    nautilus
-    loupe
-    imv
 
     # Работа и учёба
     vscode
@@ -19,24 +16,15 @@
     onlyoffice-desktopeditors
 
     # Система
-    alacritty
-    kitty
-    gnome-control-center
-    gnome-disk-utility
-    gnome-shell
 
     # Игры
     steam
     prismlauncher
     gamescope
-    # modrinth-app
 
     # Творчество и контент
     gimp
     # blender
-    # darktable
-    # rawtherapee
-    # rembg
     obs-studio
 
     # ВПН

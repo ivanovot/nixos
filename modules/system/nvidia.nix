@@ -22,10 +22,6 @@
     "nvidia-drm.fbdev=0" 
   ];
 
-  # environment.variables = {
-  #   __GL_GSYNC_ALLOWED = "0";
-  # };
-
   services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {

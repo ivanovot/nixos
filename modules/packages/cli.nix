@@ -11,14 +11,14 @@
     gitnuro
     zip
     unzip
-    # lsusb
-    # lspci
 
     # Навигация и работа с файлами
     tree
     eza
     lsd
     bat
+
+    opencode
 
     # Настройка окружения
     stow
@@ -31,5 +31,5 @@
     vkmark
   ];
 
-  # services.ollama.enable = true;
+  services.ollama.enable = true;
 }

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "builtin",
+    "source": "nixos",
+    "padding": {
+      "right": 2
+    }
+  },
+
+  "display": {
+    "separator": "  ",
+    "key": {
+      "width": 13
+    },
+    "color": {
+    "keys": "blue",
+    "title": "blue",
+    "output": "cyan",
+    "separator": "blue"
+    }
+  },
+
+  "modules": [
+    {
+      "type": "title",
+    },
+
+    {
+      "type": "separator"
+    },
+
+    {
+      "type": "os",
+      "key": " OS"
+    },
+
+    {
+      "type": "kernel",
+      "key": "󰒋 Kernel"
+    },
+
+    {
+      "type": "uptime",
+      "key": "󰅐 Uptime"
+    },
+
+    {
+      "type": "packages",
+      "key": "󰏖 Packages"
+    },
+
+    {
+      "type": "shell",
+      "key": " Shell"
+    },
+
+    {
+      "type": "display",
+      "key": "󰹑 Display"
+    },
+
+    {
+      "type": "de",
+      "key": "󰧨 DE"
+    },
+
+    {
+      "type": "wm",
+      "key": "󰖲 WM"
+    },
+
+    {
+      "type": "terminal",
+      "key": " Terminal"
+    },
+
+    {
+      "type": "cpu",
+      "key": "󰻠 CPU"
+    },
+
+    {
+      "type": "gpu",
+      "key": "󰢮 GPU"
+    },
+
+    {
+      "type": "memory",
+      "key": "󰍛 RAM"
+    },
+
+    {
+      "type": "disk",
+      "key": "󰋊 Disk",
+      "folders": [
+        "/",
+        "/home"
+      ]
+    },
+
+    {
+      "type": "battery",
+      "key": "󰂄 Battery"
+    },
+
+    {
+      "type": "localip",
+      "key": "󰩟 Network"
+    },
+
+    {
+      "type": "locale",
+      "key": "󰗊 Locale"
+    },
+
+    {
+      "type": "colors",
+      "symbol": "circle"
+    }
+  ]
+}

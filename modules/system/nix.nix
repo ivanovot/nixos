@@ -5,8 +5,6 @@
 
   system.stateVersion = "26.05";
 
-  # nixpkgs.config.allowUnfree = true;
-
   nix.settings.substituters = [
     "https://cache.nixos.org"
     "https://nix-community.cachix.org"
