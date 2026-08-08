@@ -1,7 +1,6 @@
 #!/bin/bash
 export EDITOR='micro'
 
-
 alias mi='micro'
 alias ls='ls --color=auto'
 alias y='yazi'

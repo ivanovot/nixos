@@ -12,29 +12,36 @@
     enable = true;
   };
 
-  # Enable Plasma 
   services.desktopManager.plasma6.enable = true;
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    # оставляем пустым или добавляем то, что точно не нужно
+    # пусто
   ];
 
-  # Устанавливаем только нужные программы
-  environment.systemPackages = with pkgs.kdePackages; [
-    ark             # Архиватор (ZIP, 7z, tar, rar)
-    dolphin         # Файловый менеджер
-    gwenview        # Просмотрщик изображений
-    kate            # Текстовый редактор
-    konsole         # Терминал
-    okular          # Просмотр документов PDF/DjVu/EPUB
-    elisa           # Музыкальный плеер
-    kcalc           # Калькулятор
-    kmail           # Почтовый клиент
-    dragon          # Видеоплеер
-    spectacle       # Скриншоты
-    print-manager   # Управление принтерами
-    partitionmanager # Управление разделами дисков
-  ];
+  environment.systemPackages =
+  (with pkgs.kdePackages; [
+    ark
+    dolphin
+    gwenview
+    kate
+    konsole
+    okular
+    elisa
+    kcalc
+    kmail
+    dragon
+    spectacle
+    print-manager
+    partitionmanager
+  ]) ++
+  
+  (with pkgs; [
+    zen-browser
+    firefox
+    discord
+    telegram-desktop
+    qbittorrent
+  ]);
 
   services.displayManager.sddm = {
     enable = true;

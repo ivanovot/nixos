@@ -19,7 +19,7 @@ git clone git@github.com:ivanovot/nixos.git
 
 ## Установка конфигов
 ```bash
-./nixos/src/congig.sh
+./nixos/src/config.sh
 ```
 ## Файлы
 ```
@@ -51,7 +51,7 @@ git clone git@github.com:ivanovot/nixos.git
 │       ├── sound.nix
 │       └── users.nix
 ├── README.md
-└── sripts
+├── scripts
     ├── config.sh
     ├── louncher.sh
     └── rebuild.sh

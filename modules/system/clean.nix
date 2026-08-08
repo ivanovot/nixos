@@ -4,9 +4,11 @@
   nix.gc = {
     automatic = true;
     dates = "daily";
-    options = "--delete-generations +10";
+    options = "--delete-older-than 10d";
   };
 
-  # nix.settings.auto-optimise-store = true;
-  nix.optimise.automatic = true;
+  nix.optimise = {
+    automatic = true;
+    dates = [ "daily" ];
+  };
 }

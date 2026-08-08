@@ -4,10 +4,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # dms = {
+    #   url = "github:AvengeMedia/DankMaterialShell";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     setrixtui = {
       url = "github:Mjoyufull/Setrixtui";
@@ -40,7 +40,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, dms, ... }@inputs: {
+  outputs = { self, nixpkgs, ... }@inputs: {
     overlays.default = import ./modules/packages/overlay.nix { inherit inputs; };
 
     nixosConfigurations.comp = nixpkgs.lib.nixosSystem {
@@ -57,7 +57,6 @@
 
       modules = [
         ./configuration.nix
-        dms.nixosModules.default
       ];
     };
   };
