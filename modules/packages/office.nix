@@ -6,5 +6,7 @@
     kdePackages.kate
     kdePackages.kmail
     kdePackages.ark
+
+    thunderbird
   ];
 }

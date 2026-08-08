@@ -17,5 +17,7 @@
     yazi
     fzf
     opencode
+    
+    vscode
   ];
 }

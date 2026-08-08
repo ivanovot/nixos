@@ -14,6 +14,11 @@
     cores = 6;
 
     substituters = [
+      "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" # 1. Tuna (Цинхуа)
+      "https://mirrors.ustc.edu.cn/nix-channels/store" # 2. USTC (Научно-тех. ун-т)
+      "https://mirror.sjtu.edu.cn/nix-channels/store" # 3. SJTUG (Шанхай)
+      "https://mirrors.bfsu.edu.cn/nix-channels/store" # 4. BFSU (Пекин)
+      "https://mirrors.nju.edu.cn/nix-channels/store" # 5. NJU (Нанкин)
       "https://cache.nixos.org"
       "https://cache.nixos-cuda.org"
       "https://nix-community.cachix.org"
