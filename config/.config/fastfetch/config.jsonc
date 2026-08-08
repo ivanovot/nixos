@@ -3,7 +3,7 @@
 
   "logo": {
     "type": "builtin",
-    "source": "nixos",
+    "source": "nixos2",
     "padding": {
       "right": 2
     }
