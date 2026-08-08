@@ -1,0 +1,13 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Профиль 1.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+RememberWindowSize=false
+
+[UiSettings]
+ColorScheme=
