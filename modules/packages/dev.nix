@@ -8,5 +8,14 @@
     go
     gcc
     claude-code
+    git
+    git-lfs
+    gitnuro
+    micro
+    nano
+    vim
+    yazi
+    fzf
+    opencode
   ];
 }

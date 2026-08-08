@@ -5,5 +5,7 @@
     steam
     prismlauncher
     gamescope
+    dxvk
+    vkmark
   ];
 }

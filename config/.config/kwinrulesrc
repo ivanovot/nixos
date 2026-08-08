@@ -1,0 +1,10 @@
+[General]
+count=1
+rules=e8ea9df3-f507-4fab-a87e-2b21ca0c4671
+
+[e8ea9df3-f507-4fab-a87e-2b21ca0c4671]
+Description=Блюр на все
+Enabled=false
+opacityactiverule=2
+opacityinactive=83
+opacityinactiverule=2

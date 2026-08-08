@@ -2,14 +2,14 @@
 
 {
   imports = [
-    ./packages/core.nix
-    ./packages/dev.nix
-    ./packages/desktop.nix
-    ./packages/media.nix
-    ./packages/network.nix
+    ./packages/graphics.nix
     ./packages/gaming.nix
-    ./packages/tui.nix
-    ./packages/system-utils.nix
+    ./packages/internet.nix
+    ./packages/multimedia.nix
+    ./packages/office.nix
+    ./packages/dev.nix
+    ./packages/system.nix
+    ./packages/utils.nix
     ./packages/themes.nix
     ./packages/toys.nix
     ./packages/flatpak.nix

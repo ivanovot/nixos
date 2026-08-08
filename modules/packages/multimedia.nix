@@ -2,11 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    throne
+    kdePackages.elisa
   ];
-
-  programs.throne = {
-    enable = true;
-    tunMode.enable = true;
-  };
 }

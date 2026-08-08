@@ -3,7 +3,10 @@
 {
   environment.systemPackages = with pkgs; [
     gimp
-    obs-studio
     blender
+    obs-studio
+    kdePackages.gwenview
+    kdePackages.spectacle
+    kdePackages.dragon
   ];
 }
