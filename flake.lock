@@ -1,27 +1,5 @@
 {
   "nodes": {
-    "bluetui": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-overlay": "rust-overlay"
-      },
-      "locked": {
-        "lastModified": 1784311375,
-        "narHash": "sha256-Qcby+TJma/CG+M3AY0NkrQxfBqUCO4xdeico4w6gJXo=",
-        "owner": "pythops",
-        "repo": "bluetui",
-        "rev": "0ac17bf8bba97c364a3e409f418356063f6b15a2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "pythops",
-        "repo": "bluetui",
-        "type": "github"
-      }
-    },
     "ducksay": {
       "inputs": {
         "nixpkgs": [
@@ -80,65 +58,6 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "flake-utils_2": {
-      "inputs": {
-        "systems": "systems_3"
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "kwin-effects-glass": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "utils": "utils"
-      },
-      "locked": {
-        "lastModified": 1785153218,
-        "narHash": "sha256-V0OHlOQfNTXLwYvHSGIdMn8cmxkdymQCMB0SHx6VhKs=",
-        "owner": "4v3ngR",
-        "repo": "kwin-effects-glass",
-        "rev": "fabad92e318b7b008937efc99df10d5a9099b2c5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "4v3ngR",
-        "repo": "kwin-effects-glass",
-        "type": "github"
-      }
-    },
-    "meowdo": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1783430831,
-        "narHash": "sha256-ShSBPtuP2jDAz94PEASFq4VsWJPw8CCQL8fGQ4OseLY=",
-        "owner": "Sycorlax",
-        "repo": "Meowdo",
-        "rev": "8274d21820448a0d128af16add58950e377da8fe",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Sycorlax",
-        "repo": "Meowdo",
         "type": "github"
       }
     },
@@ -209,13 +128,31 @@
         "type": "github"
       }
     },
+    "pyroclear": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786288496,
+        "narHash": "sha256-yPgmD6gyhP0VRpaH2s7HUAdciiNNZqjtkRGrYRFQwc0=",
+        "owner": "ivanovot",
+        "repo": "pyroclear",
+        "rev": "fe35f4c32a0701f47a35b83d5c69aad055950059",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ivanovot",
+        "repo": "pyroclear",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "bluetui": "bluetui",
         "ducksay": "ducksay",
-        "kwin-effects-glass": "kwin-effects-glass",
-        "meowdo": "meowdo",
         "nixpkgs": "nixpkgs",
+        "pyroclear": "pyroclear",
         "setrixtui": "setrixtui",
         "zen-browser": "zen-browser"
       }
@@ -239,27 +176,6 @@
     },
     "rust-overlay": {
       "inputs": {
-        "nixpkgs": [
-          "bluetui",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1767754000,
-        "narHash": "sha256-znoNJs2QZFl+wCFLd6FbUJ00c74kvzOjyQYXc45uFvo=",
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "rev": "0b3a5ad260479f2c9bdadf3ba5b2a4be359cfcdd",
-        "type": "github"
-      },
-      "original": {
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "rust-overlay_2": {
-      "inputs": {
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
@@ -278,12 +194,12 @@
     },
     "setrixtui": {
       "inputs": {
-        "flake-utils": "flake-utils_2",
+        "flake-utils": "flake-utils",
         "naersk": "naersk",
         "nixpkgs": [
           "nixpkgs"
         ],
-        "rust-overlay": "rust-overlay_2"
+        "rust-overlay": "rust-overlay"
       },
       "locked": {
         "lastModified": 1773420937,
@@ -314,54 +230,6 @@
         "type": "github"
       }
     },
-    "systems_2": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
-    "systems_3": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
-    "utils": {
-      "inputs": {
-        "systems": "systems_2"
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "zen-browser": {
       "inputs": {
         "nixpkgs": [
@@ -369,11 +237,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785480078,
-        "narHash": "sha256-wWRW/Teo+58EMeTpVVEAqYid1qLzpB/PViQJCv7Xxvc=",
+        "lastModified": 1786164819,
+        "narHash": "sha256-tvBlGAYyzHYdLwn035bRCrB1mcMjvNNavcNZ293AIIA=",
         "owner": "youwen5",
         "repo": "zen-browser-flake",
-        "rev": "b7d4cc2778143a228675cd8bb7efdfa111638ac8",
+        "rev": "f9af5f7017cea1c159e17922288fb38ff94d28cd",
         "type": "github"
       },
       "original": {

@@ -5,10 +5,9 @@
         cbonsai
         cmatrix
         cava
-        scope-tui
-        meowdo
         setrixtui
         ducksay
         fastfetch
+        pyroclear
     ];
 }

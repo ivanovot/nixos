@@ -7,7 +7,6 @@
       papirus-icon-theme
 
       kdePackages.sddm-kcm
-      kwin-effects-glass
     ];
 
     fonts.packages = with pkgs; [

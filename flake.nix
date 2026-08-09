@@ -4,18 +4,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    # dms = {
-    #   url = "github:AvengeMedia/DankMaterialShell";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
     setrixtui = {
       url = "github:Mjoyufull/Setrixtui";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    meowdo = {
-      url = "github:Sycorlax/Meowdo";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -24,18 +14,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    bluetui = {
-    	url = "github:pythops/bluetui";
-    	inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs"; 
     };
 
-    kwin-effects-glass = {
-      url = "github:4v3ngR/kwin-effects-glass";
+    pyroclear = {
+      url = "github:ivanovot/pyroclear";
       inputs.nixpkgs.follows = "nixpkgs"; 
     };
   };
