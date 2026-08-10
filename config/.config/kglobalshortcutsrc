@@ -283,9 +283,5 @@ toggle do not disturb=none,none,Включение и отключение ре�
 [services][org.kde.konsole.desktop]
 _launch=Meta+T
 
-[services][org.kde.spectacle.desktop]
-CurrentMonitorScreenShot=none
-OpenWithoutScreenshot=none
-
 [services][systemsettings.desktop]
 kcm-powerdevilprofilesconfig=none
