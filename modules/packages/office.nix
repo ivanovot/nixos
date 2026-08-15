@@ -8,5 +8,6 @@
     kdePackages.ark
 
     thunderbird
+    onlyoffice-desktopeditors
   ];
 }

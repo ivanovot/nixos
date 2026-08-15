@@ -7,5 +7,6 @@
     gamescope
     dxvk
     vkmark
+    BedrockOnLinux
   ];
 }

@@ -24,6 +24,7 @@
     kdePackages.kcalc
     kdePackages.print-manager
     kdePackages.partitionmanager
+
     nh
     nftables
     pulseaudio
@@ -36,6 +37,7 @@
     cups-pk-helper
     android-tools
     cudaPackages.cudatoolkit
+    wezterm
   ];
 
   services.displayManager.sddm = {
