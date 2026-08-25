@@ -8,5 +8,11 @@
     dxvk
     vkmark
     BedrockOnLinux
+    (heroic.override {
+      extraPkgs = pkgs': with pkgs'; [
+        gamescope
+        gamemode
+      ];
+    })
   ];
 }

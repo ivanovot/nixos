@@ -9,8 +9,24 @@
       kdePackages.sddm-kcm
     ];
 
-    fonts.packages = with pkgs; [
-      corefonts
-      nerd-fonts.hack
-    ];
+    fonts = {
+      fontDir.enable = true;
+
+      packages = with pkgs; [
+        corefonts
+        nerd-fonts.hack
+        
+        dejavu_fonts
+        liberation_ttf
+      ];
+
+      fontconfig = {
+        enable = true;
+        defaultFonts = {
+          sansSerif = [ "Arial" "DejaVu Sans" "Liberation Sans" ];
+          serif = [ "Times New Roman" "DejaVu Serif" ];
+          monospace = [ "Hack Nerd Font" ];
+        };
+      };
+    };
 }

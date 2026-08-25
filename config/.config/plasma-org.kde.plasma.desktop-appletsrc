@@ -406,4 +406,4 @@ UncheckedSlides=/home/timo/nixos/config/.config/DankMaterialShell/wallpapers/ale
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=
+screenMapping=desktop:/Desktop,1,30e09189-c734-44c5-9673-463d267706ce
