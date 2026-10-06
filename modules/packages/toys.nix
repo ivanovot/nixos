@@ -5,7 +5,7 @@
         cbonsai
         cmatrix
         cava
-        setrixtui
+        # setrixtui
         ducksay
         fastfetch
         pyroclear

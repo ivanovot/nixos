@@ -40,6 +40,13 @@ Strength=10
 [Effect-overview]
 BorderActivate=9
 
+[Effect-wobblywindows]
+AdvancedMode=true
+Drag=54
+MoveFactor=12
+ResizeWobble=false
+Stiffness=42
+
 [MouseBindings]
 CommandAll1=Activate, raise and move
 
@@ -50,6 +57,7 @@ sheetEnabled=true
 thumbnailasideEnabled=true
 translucencyEnabled=true
 virtualdesktopsonlyonprimaryEnabled=false
+wobblywindowsEnabled=true
 
 [Tiling][5c5ff7ec-9ef1-4586-8a2b-d14faac1c533][b10dd5f6-f852-4d27-80dc-dbd2d7fa5f97]
 padding=4

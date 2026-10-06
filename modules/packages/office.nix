@@ -7,7 +7,7 @@
     kdePackages.kmail
     kdePackages.ark
 
-    thunderbird
+    # thunderbird
     onlyoffice-desktopeditors
   ];
 }

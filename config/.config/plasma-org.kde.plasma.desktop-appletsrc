@@ -43,8 +43,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][273][Applets][274][Configuration]
-popupHeight=540
-popupWidth=713
+popupHeight=501
+popupWidth=665
 
 [Containments][273][Applets][274][Configuration][ConfigDialog]
 DialogHeight=630
@@ -174,7 +174,7 @@ customDateFormat=ddd d MMM
 dateDisplayFormat=BesideTime
 dateFormat=custom
 enabledCalendarPlugins=/usr/lib/qt/plugins/plasmacalendarplugins/astronomicalevents.so,/usr/lib/qt/plugins/plasmacalendarplugins/holidaysevents.so
-firstDayOfWeek=0
+firstDayOfWeek=1
 fontFamily=Noto Sans Avestan
 fontSize=12
 fontStyleName=Regular
@@ -216,7 +216,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][298][Applets][299][Configuration]
 popupHeight=509
-popupWidth=659
+popupWidth=665
 
 [Containments][298][Applets][299][Configuration][ConfigDialog]
 DialogHeight=630
@@ -343,7 +343,6 @@ customDateFormat=ddd d MMM
 dateDisplayFormat=BesideTime
 dateFormat=custom
 enabledCalendarPlugins=/usr/lib/qt/plugins/plasmacalendarplugins/astronomicalevents.so,/usr/lib/qt/plugins/plasmacalendarplugins/holidaysevents.so
-firstDayOfWeek=0
 fontFamily=Noto Sans Avestan
 fontSize=12
 fontStyleName=Regular
@@ -406,4 +405,4 @@ UncheckedSlides=/home/timo/nixos/config/.config/DankMaterialShell/wallpapers/ale
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/Desktop,1,30e09189-c734-44c5-9673-463d267706ce
+screenMapping=

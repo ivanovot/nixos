@@ -4,10 +4,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
-    setrixtui = {
-      url = "github:Mjoyufull/Setrixtui";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # setrixtui = {
+    #   url = "github:Mjoyufull/Setrixtui";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     ducksay = {
       url = "github:ivanovot/ducksay";
@@ -25,7 +25,7 @@
     };
 
     BedrockOnLinux = {
-      url = "github:Wyze3306/BedrockOnLinux";
+      url = "github:ivanovot/BedrockOnLinux";
       # inputs.nixpkgs.follows = "nixpkgs"; 
     };
 
