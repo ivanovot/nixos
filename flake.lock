@@ -5,15 +5,15 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1786722114,
-        "narHash": "sha256-npgUAjP6pdYnZsn/fLYwfdA2xwRkHHnf3su0RqzfvYs=",
-        "owner": "ivanovot",
+        "lastModified": 1791411127,
+        "narHash": "sha256-6Q32Mjyg9jMVFA+OfoOM8gFB/QGPoLBVNrXWLhzojRI=",
+        "owner": "Wyze3306",
         "repo": "BedrockOnLinux",
-        "rev": "2ed21413fa339a2972ba18283276e34efd7c9639",
+        "rev": "fd5aba3a4182d5085630ed34b27f9cac2e8cda7d",
         "type": "github"
       },
       "original": {
-        "owner": "ivanovot",
+        "owner": "Wyze3306",
         "repo": "BedrockOnLinux",
         "type": "github"
       }
@@ -40,15 +40,31 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1786384358,
-        "narHash": "sha256-RzPPiWeUtuvymnpuEWsdtzli5w4kjZs49FqEs3/1u+I=",
+        "lastModified": 1791456040,
+        "narHash": "sha256-H83yz/do+hjOO0uujHyH8RgtIQP2v7Mw+cLwcZK/xKc=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
+        "rev": "e7439b6b14ad3cc35d05608ebca9bce01a25f5f8",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-unstable": {
+      "locked": {
+        "lastModified": 1791456040,
+        "narHash": "sha256-H83yz/do+hjOO0uujHyH8RgtIQP2v7Mw+cLwcZK/xKc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e7439b6b14ad3cc35d05608ebca9bce01a25f5f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
@@ -95,6 +111,7 @@
         "BedrockOnLinux": "BedrockOnLinux",
         "ducksay": "ducksay",
         "nixpkgs": "nixpkgs_2",
+        "nixpkgs-unstable": "nixpkgs-unstable",
         "pyroclear": "pyroclear",
         "zen-browser": "zen-browser"
       }

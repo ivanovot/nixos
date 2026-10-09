@@ -4,6 +4,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+
     # setrixtui = {
     #   url = "github:Mjoyufull/Setrixtui";
     #   inputs.nixpkgs.follows = "nixpkgs";
@@ -25,7 +27,7 @@
     };
 
     BedrockOnLinux = {
-      url = "github:ivanovot/BedrockOnLinux";
+      url = "github:Wyze3306/BedrockOnLinux";
       # inputs.nixpkgs.follows = "nixpkgs"; 
     };
 
