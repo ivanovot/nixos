@@ -7,6 +7,7 @@
     ./packages/internet.nix
     ./packages/multimedia.nix
     ./packages/office.nix
+    ./packages/ollama.nix
     ./packages/dev.nix
     ./packages/system.nix
     ./packages/utils.nix

@@ -111,7 +111,3 @@ FocusPolicy=FocusFollowsMouse
 [Xwayland]
 Scale=1
 XwaylandEisNoPromptApps=steam
-
-[org.kde.kdecoration2]
-library=org.kde.breeze
-theme=Breeze

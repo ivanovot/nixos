@@ -1,0 +1,19 @@
+[Annotations]
+annotationToolType=10
+blurStrength=1
+freehandShadow=false
+pixelateStrength=1
+
+[GuiConfig]
+quitAfterSaveCopyExport=true
+
+[ImageSave]
+lastImageSaveLocation=file:///home/timo/Pictures/Снимки экрана/Снимок экрана_20261002_090720.png
+translatedScreenshotsFolder=Снимки экрана
+
+[VideoSave]
+translatedScreencastsFolder=Записи экрана
+
+[ViewerWindow]
+2 screens: Height=570
+2 screens: Width=1081

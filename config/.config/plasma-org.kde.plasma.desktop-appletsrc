@@ -294,7 +294,6 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][298][Applets][302][Applets][311][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][298][Applets][302][Applets][312]
